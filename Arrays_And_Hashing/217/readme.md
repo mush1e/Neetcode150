@@ -7,3 +7,5 @@
   - else return false
 
 took like 5 mins pretty easy
+
+- made it a little better using a hash set
