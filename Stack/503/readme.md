@@ -1,0 +1,13 @@
+### How I solved this
+- Created variables
+  - a vector `solution` of type int with the elements of nums
+  - a stack `stk` of type int
+- So here my logic is to iterate through the array twice and use `%` to make it seem like im doing it circularly
+- Maintain `stk` to be monotonically decreasing
+  - while `stk` is not empty and its top is less than `nums[i%nums.size()]`
+    - pop `stk`
+  - at the end if `stk` is empty, `solution[i%nums.size()] = -1`
+  - else set it to the top of `stk`
+  - push `nums[i%nums.size()]` to `stk`
+- return `solution`
+- Took me ~15 mins, ill revisit, pretty interesting
